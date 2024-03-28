@@ -3,7 +3,7 @@ package hr.fer.oop.inheritance_p4;
 public class Main {
 
 	public static void main(String[] args) {
-		Person p = new Person("Barbara", "Stipetić");
+		/*Person p = new Person("Barbara", "Stipetić");
 		Person p2 = new Person();
 		Student s = new Student("003643434", 19);
 		Student nonAntonio = new Student("00367007", "Lucija", "Cvijanovic", 19);
@@ -66,7 +66,7 @@ public class Main {
 		// (Person)
 		// 2. "moze li student biti predavac?" - NE (osim nakon kada doktorirate ali o
 		// tom potom ;)
-
+*/
 	}
 
 }

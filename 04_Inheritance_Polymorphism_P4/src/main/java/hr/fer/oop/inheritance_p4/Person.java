@@ -3,7 +3,7 @@ package hr.fer.oop.inheritance_p4;
 /**
  * Primjer bazne klase (nadklase, klase roditelj, super klase). 
  */
-public class Person {
+public abstract class Person  {
 	private String firstname;
 	private String lastname;
 	
@@ -29,6 +29,7 @@ public class Person {
 	public Person(String firstname, String lastname) {
 		this.firstname = firstname;
 		this.lastname = lastname;
+		System.out.println("ispis iz person konstruktora:"+getPersonType());
 	}
 	
 	public String getFirstname() {
@@ -44,7 +45,10 @@ public class Person {
 	 */
 	@Override
 	public String toString() {
-		return String.format("Moje ime je %s %s. ", firstname, lastname);
+		String tipOsobe = getPersonType();
+		return String.format("Moje ime je %s %s. Tip osobe: %s %n", firstname, lastname, tipOsobe);
 	}
+	
+	public abstract String getPersonType();
 
 }

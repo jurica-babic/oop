@@ -6,7 +6,7 @@ package hr.fer.oop.inheritance_p4;
  * Student "is a " person.
  * Posljedicno: student moze naslijediti osobu: "extends Person" 
  */
-public class Student extends Person {
+public abstract class Student extends Person implements Gamer {
 	// jmbag se ne mijenja, zato final
 	private final String jmbag;
 
@@ -67,7 +67,7 @@ public class Student extends Person {
 	 * "OFC"
 	 */
 	@Override
-	public void talk() {
+	public final void talk() {
 		super.talk();
 		System.out.println("OFC!");
 	}
@@ -94,5 +94,19 @@ public class Student extends Person {
 		return jesmoLiJednaki;
 		
 	}
+	
+	@Override
+	public void setupGamingRig() {
+		System.out.println("postavio laptop!");
+		
+	}
+
+	@Override
+	public void play() {
+		System.out.println("igram CS2!!");
+		
+	}
+	
+	
 
 }
